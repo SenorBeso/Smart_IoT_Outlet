@@ -60,3 +60,34 @@ pip install lgpio
 
 ```
 
+## Starting the System
+
+The system uses two scripts:
+
+- `relay_pi_subscriber.py` runs on the Raspberry Pi Zero 2 W.
+- `camera.py` runs on the Windows workstation.
+
+Start the Raspberry Pi script first, then start the Windows camera script.
+
+---
+
+### 1. Start the Raspberry Pi Relay/Power Monitor
+
+SSH into the Raspberry Pi or open a terminal on the Pi:
+
+```bash
+cd ~/Documents/iot
+source venv/bin/activate
+export MQTT_SHARED_TOKEN="password123"
+python3 relay_pi_subscriber.py --relay-pin 18 --mqtt-token "$MQTT_SHARED_TOKEN"
+```
+
+To get the token or set it, you do this:
+```
+export MQTT_SHARED_TOKEN="password123"
+```
+
+### 2. Start the windows Camera script - replace with correct ip and correct token of the Pi
+```
+python camera.py --camera 0 --mqtt-broker 192.168.4.204 --mqtt-token password123
+```
