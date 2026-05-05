@@ -87,7 +87,7 @@ To get the token or set it, you do this:
 export MQTT_SHARED_TOKEN="password123"
 ```
 
-### 2. Start the windows Camera script - replace with correct ip and correct token of the Pi
+### 2. Start the windows Camera script - replace with correct ip and correct token of the Pi - camera "0" is default, but you can set for other cameras as well.
 ```
 python camera.py --camera 0 --mqtt-broker 192.168.4.204 --mqtt-token password123
 ```
