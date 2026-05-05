@@ -49,6 +49,15 @@ pip install opencv-python
 pip install paho-mqtt
 ```
 
+For the yolo installation, here is a quick script to import the model:
+```bash
+from ultralytics import YOLO
+
+model = YOLO("yolo11n.pt")  # small pretrained model
+print("Model loaded successfully")
+
+```
+
 Raspberry Pi:
 ```
 pip install --upgrade pip
