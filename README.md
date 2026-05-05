@@ -35,7 +35,7 @@ The goal of the system is to control outlet power based on whether a human is pr
        ↓
   [Relay-Controlled Outlet]
        ↓
-  [CSV Log File]
+  [SQLite Database]
 
 ```
 
