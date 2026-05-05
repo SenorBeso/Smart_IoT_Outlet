@@ -53,7 +53,7 @@ For the yolo installation, here is a quick script to import the model:
 ```bash
 from ultralytics import YOLO
 
-model = YOLO("yolo11n.pt")  # small pretrained model
+model = YOLO("yolo11n.pt") 
 print("Model loaded successfully")
 
 ```
