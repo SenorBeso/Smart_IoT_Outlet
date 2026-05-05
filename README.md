@@ -39,3 +39,11 @@ The goal of the system is to control outlet power based on whether a human is pr
 
 ```
 
+## Venv Requirements
+With pip, you need to install a few libraries
+opencv-python - this is just for the windows machine
+ultralytics - this is just for the windows machine
+paho-mqtt
+gpiozero - this is for the raspberry pi
+
+
